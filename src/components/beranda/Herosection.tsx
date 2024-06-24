@@ -1,9 +1,7 @@
-import Image from "next/image";
-import React from "react";
 
 export default function Herosection() {
   return (
-    <section className="flex max-lg:flex-col lg:gap-4 items-end gap-1">
+    <section className="flex max-xl:flex-col xl:gap-4 xl:items-end gap-1 px-20 max-lg:px-6 ">
       <h1 className="font-bold text-6xl max-lg:text-5xl tracking-wide leading-0">
         Eksplorasi Sabang,
       </h1>

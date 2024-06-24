@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   AiOutlineClose,
   AiOutlineInstagram,
@@ -11,38 +11,62 @@ import {
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
+  const [isScroll, setIsScroll] = useState(false);
+
   const handleToggle = () => {
     setToggle(!toggle);
   };
+
+  const handleIsScroll = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      if (windowHeight > 1) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleIsScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleIsScroll);
+    };
+  }, []);
+
   return (
-    <header className="sticky z-10 top-0 px-20 max-lg:px-6 py-6 flex bg-gray-100/10 backdrop-blur items-center justify-between">
-      <h1
-        className={`text-xl font-bold z-20 ${
-          toggle ? "text-neutral-100" : "text-neutral-900"
-        }`}
-      >
+    <header
+      className={`sticky z-10 top-0 px-20 max-lg:px-6 py-6 flex items-center justify-between duration-300 ${
+        isScroll
+          ? "bg-gray-900/50 backdrop-blur text-gray-100"
+          : "bg-slate-900/0"
+      }`}
+    >
+      <h1 className={`text-xl font-bold z-20 ${toggle && "text-gray-100"}`}>
         Jal Senorkeling Sabang
       </h1>
       <nav className="max-lg:hidden">
         <ul className="flex items-center gap-8">
           <li>
-            <Link className="hover:text-sky-600 duration-300" href="/">
+            <Link className="hover:text-sky-600" href="/">
               Beranda
             </Link>
           </li>
           <li>
-            <Link className="hover:text-sky-600 duration-300" href="/penawaran">
+            <Link className="hover:text-sky-600" href="/penawaran">
               Penawaran
             </Link>
           </li>
           <li>
-            <Link className="hover:text-sky-600 duration-300" href="/tentang">
-              Tentang
+            <Link className="hover:text-sky-600" href="/kontak">
+              Kontak
             </Link>
           </li>
           <li>
-            <Link className="hover:text-sky-600 duration-300" href="/kontak">
-              Kontak
+            <Link className="hover:text-sky-600" href="/tentang">
+              Tentang
             </Link>
           </li>
         </ul>
@@ -51,28 +75,28 @@ export default function Header() {
         <Link
           href={"https://wa.me/6281362807810"}
           target="_blank"
-          className="hover:text-sky-600 duration-300"
+          className="hover:text-sky-600"
         >
           <AiOutlineWhatsApp size={22} />
         </Link>
         <Link
           href={"https://www.instagram.com/jal_snorkeling_sabang/"}
           target="_blank"
-          className="hover:text-sky-600 duration-300"
+          className="hover:text-sky-600"
         >
           <AiOutlineInstagram size={22} />
         </Link>
         <Link
           href={"https://www.tiktok.com/@bahrizal13"}
           target="_blank"
-          className="hover:text-sky-600 duration-300"
+          className="hover:text-sky-600"
         >
           <AiOutlineTikTok size={22} />
         </Link>
       </div>
       <button
         onClick={handleToggle}
-        className={`lg:hidden z-20 hover:text-sky-600 duration-300 ${
+        className={`lg:hidden z-20 hover:text-sky-600 ${
           toggle ? "text-neutral-100" : "text-neutral-900"
         }`}
       >
@@ -81,31 +105,28 @@ export default function Header() {
       <aside
         className={`${
           toggle ? "opacity-100  visible" : "opacity-0 invisible"
-        } duration-300 absolute top-0 h-screen right-0 w-full bg-gray-900 text-gray-100 p-6 flex flex-col justify-between`}
+        } absolute top-0 h-screen right-0 w-full bg-gray-900 text-gray-100 p-6 flex flex-col justify-between`}
       >
         <nav className="mt-16 text-lg">
           <ul className="flex flex-col gap-1">
             <li>
-              <Link className="hover:text-sky-600 duration-300" href="/">
+              <Link className="hover:text-sky-600" href="/">
                 Beranda
               </Link>
             </li>
             <li>
-              <Link
-                className="hover:text-sky-600 duration-300"
-                href="/penawaran"
-              >
+              <Link className="hover:text-sky-600" href="/penawaran">
                 Penawaran
               </Link>
             </li>
             <li>
-              <Link className="hover:text-sky-600 duration-300" href="/tentang">
-                Tentang
+              <Link className="hover:text-sky-600" href="/kontak">
+                Kontak
               </Link>
             </li>
             <li>
-              <Link className="hover:text-sky-600 duration-300" href="/kontak">
-                Kontak
+              <Link className="hover:text-sky-600" href="/tentang">
+                Tentang
               </Link>
             </li>
           </ul>
@@ -114,21 +135,21 @@ export default function Header() {
           <Link
             href={"https://wa.me/6281362807810"}
             target="_blank"
-            className="hover:text-sky-600 duration-300"
+            className="hover:text-sky-600"
           >
             <AiOutlineWhatsApp size={24} />
           </Link>
           <Link
             href={"https://www.instagram.com/jal_snorkeling_sabang/"}
             target="_blank"
-            className="hover:text-sky-600 duration-300"
+            className="hover:text-sky-600"
           >
             <AiOutlineInstagram size={24} />
           </Link>
           <Link
             href={"https://www.tiktok.com/@bahrizal13"}
             target="_blank"
-            className="hover:text-sky-600 duration-300"
+            className="hover:text-sky-600"
           >
             <AiOutlineTikTok size={24} />
           </Link>

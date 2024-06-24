@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   AiOutlineInstagram,
   AiOutlineTikTok,
@@ -6,8 +8,12 @@ import {
 } from "react-icons/ai";
 
 export default function Footer() {
+  const pathname = usePathname();
   return (
-    <footer className="flex flex-col items-center justify-center gap-4 bg-gray-900 text-gray-100 py-12 px-4 mt-12">
+    <footer className="flex flex-col items-center justify-center gap-4 bg-gray-900 text-gray-100 py-12 px-4 relative">
+      {pathname === "/" && (
+        <div className="w-20 h-1 rounded-full bg-gradient-to-r from-gray-300 to-gray-600 bg-gray-100 absolute top-0" />
+      )}
       <div className="flex flex-col items-center justify-center gap-1">
         <p className="font-medium">Ikuti kami di:</p>
         <div className="flex gap-6">
@@ -66,6 +72,7 @@ export default function Footer() {
         &copy; Jal Senorkeling Sabang. <br /> Site design with 💙 by:{" "}
         <Link
           href={"https://muhammadfathurraiyan.site"}
+          target="_blank"
           className="font-bold hover:text-sky-600 duration-300"
         >
           Raiyan.

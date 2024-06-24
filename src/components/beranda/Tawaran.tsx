@@ -4,7 +4,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 
 export default function Tawaran() {
   return (
-    <section className="space-y-10 mt-4">
+    <section className="space-y-10 mt-4 px-20 max-lg:px-6">
       <h1 className="font-bold text-3xl text-center">Apa Yang Kami Tawarkan</h1>
       <div className="space-y-10">
         <div className="flex flex-col gap-4">
@@ -13,13 +13,13 @@ export default function Tawaran() {
             <h2 className="font-semibold text-3xl">01</h2>
           </div>
           <div className="grid lg:grid-cols-5 gap-8 max-lg:gap-4">
-            <div className="lg:col-span-3 h-[50vh] rounded-3xl max-lg:rounded-xl relative">
+            <div className="lg:col-span-3 h-[50vh] rounded-xl relative">
               <Image
                 src="/bg9.jpg"
                 alt="pulau rubiah"
                 width={1920}
                 height={1080}
-                className="size-full object-cover rounded-3xl max-lg:rounded-xl"
+                className="size-full object-cover rounded-xl"
               />
               <div className="absolute bottom-5 text-gray-100 left-5 flex items-center gap-2">
                 <MdOutlineLocationOn size={24} aria-label="ikon lokasi" />
@@ -46,7 +46,7 @@ export default function Tawaran() {
                 href={""}
                 className="px-3 py-1 rounded-md border border-gray-900 w-fit font-medium hover:text-gray-100 hover:bg-gray-900 duration-300"
               >
-                Pesan
+                Detail
               </Link>
             </div>
           </div>
@@ -75,16 +75,16 @@ export default function Tawaran() {
                 href={""}
                 className="px-3 py-1 rounded-md border border-gray-900 w-fit font-medium hover:text-gray-100 hover:bg-gray-900 duration-300"
               >
-                Pesan
+                Detail
               </Link>
             </div>
-            <div className="lg:col-span-3 max-lg:-order-1 h-[50vh] rounded-3xl max-lg:rounded-xl relative">
+            <div className="lg:col-span-3 max-lg:-order-1 h-[50vh] rounded-xl relative">
               <Image
                 src="/bg3.jpg"
                 alt="dolphin trip"
                 width={1920}
                 height={1080}
-                className="size-full object-cover rounded-3xl max-lg:rounded-xl"
+                className="size-full object-cover rounded-xl"
               />
               <div className="absolute bottom-5 text-gray-100 left-5 flex items-center gap-2">
                 <MdOutlineLocationOn size={24} aria-label="ikon lokasi" />
@@ -99,13 +99,13 @@ export default function Tawaran() {
             <h2 className="font-semibold text-3xl">03</h2>
           </div>
           <div className="grid lg:grid-cols-5 gap-8 max-lg:gap-4">
-            <div className="lg:col-span-3 h-[50vh] rounded-3xl max-lg:rounded-xl relative">
+            <div className="lg:col-span-3 h-[50vh] rounded-xl relative">
               <Image
                 src="/bg9.jpg"
                 alt="pulau rubiah"
                 width={1920}
                 height={1080}
-                className="size-full object-cover rounded-3xl max-lg:rounded-xl"
+                className="size-full object-cover rounded-xl"
               />
               <div className="absolute bottom-5 text-gray-100 left-5 flex items-center gap-2">
                 <MdOutlineLocationOn size={24} aria-label="ikon lokasi" />
@@ -131,7 +131,7 @@ export default function Tawaran() {
                 href={""}
                 className="px-3 py-1 rounded-md border border-gray-900 w-fit font-medium hover:text-gray-100 hover:bg-gray-900 duration-300"
               >
-                Pesan
+                Detail
               </Link>
             </div>
           </div>
@@ -159,16 +159,16 @@ export default function Tawaran() {
                 href={""}
                 className="px-3 py-1 rounded-md border border-gray-900 w-fit font-medium hover:text-gray-100 hover:bg-gray-900 duration-300"
               >
-                Pesan
+                Detail
               </Link>
             </div>
-            <div className="lg:col-span-3 max-lg:-order-1 h-[50vh] rounded-3xl max-lg:rounded-xl relative">
+            <div className="lg:col-span-3 max-lg:-order-1 h-[50vh] rounded-xl relative">
               <Image
                 src="/bg3.jpg"
                 alt="dolphin trip"
                 width={1920}
                 height={1080}
-                className="size-full object-cover rounded-3xl max-lg:rounded-xl"
+                className="size-full object-cover rounded-xl"
               />
               <div className="absolute bottom-5 text-gray-100 left-5 flex items-center gap-2">
                 <MdOutlineLocationOn size={24} aria-label="ikon lokasi" />
@@ -183,13 +183,13 @@ export default function Tawaran() {
             <h2 className="font-semibold text-3xl">05</h2>
           </div>
           <div className="grid lg:grid-cols-5 gap-8 max-lg:gap-4">
-            <div className="lg:col-span-3 h-[50vh] rounded-3xl max-lg:rounded-xl relative">
+            <div className="lg:col-span-3 h-[50vh] rounded-xl relative">
               <Image
                 src="/bg9.jpg"
                 alt="pulau rubiah"
                 width={1920}
                 height={1080}
-                className="size-full object-cover rounded-3xl max-lg:rounded-xl"
+                className="size-full object-cover rounded-xl"
               />
               <div className="absolute bottom-5 text-gray-100 left-5 flex items-center gap-2">
                 <MdOutlineLocationOn size={24} aria-label="ikon lokasi" />
@@ -216,7 +216,7 @@ export default function Tawaran() {
                 href={""}
                 className="px-3 py-1 rounded-md border border-gray-900 w-fit font-medium hover:text-gray-100 hover:bg-gray-900 duration-300"
               >
-                Pesan
+                Detail
               </Link>
             </div>
           </div>
