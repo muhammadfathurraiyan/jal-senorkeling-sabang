@@ -11,7 +11,7 @@ export default function page() {
   };
   return (
     <main className="mb-[72px] px-20 max-lg:px-6">
-      <h1 className="text-center text-5xl font-bold mb-8">Kontak</h1>
+      <h1 className="text-center text-5xl font-bold mb-8">Terhubung Dengan Kami</h1>
       <div className="grid lg:grid-cols-2 gap-8">
         <section className="rounded-3xl max-lg:h-[40vh] overflow-hidden">
           <iframe
@@ -25,7 +25,7 @@ export default function page() {
         <section className="flex flex-col gap-4 ">
           <div>
             <h1 className="font-bold  text-3xl tracking-wide leading-0">
-              Hubungi Kami
+              Formulir kontak
             </h1>
             <p className="">
               Silahkan isi form dibawah untuk menghubungi kami via WhatsApp.
@@ -37,13 +37,13 @@ export default function page() {
                 htmlFor="name"
                 className="absolute -top-3 left-3 bg-gray-100 px-1"
               >
-                Nama Lengkap
+                Nama
               </label>
               <input
                 id="nama"
                 name="nama"
                 type="text"
-                className="border border-gray-400 rounded p-2 outline-none"
+                className="border border-gray-400 bg-gray-100 rounded p-2 outline-none"
                 placeholder="Alan Turing"
               />
             </div>
@@ -58,7 +58,7 @@ export default function page() {
                 rows={8}
                 id="pesan"
                 name="pesan"
-                className="border border-gray-400 rounded p-2 outline-none "
+                className="border border-gray-400 bg-gray-100 rounded p-2 outline-none "
                 placeholder="Hallo saya tertarik..."
               />
             </div>
