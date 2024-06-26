@@ -5,6 +5,7 @@ import {
   AiOutlineClose,
   AiOutlineInstagram,
   AiOutlineMenu,
+  AiOutlineShoppingCart,
   AiOutlineTikTok,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
@@ -41,7 +42,7 @@ export default function Header() {
       className={`sticky z-10 top-0 px-20 max-lg:px-6 py-6 flex items-center justify-between duration-300 ${
         isScroll
           ? "bg-gray-900/50 backdrop-blur text-gray-100"
-          : "bg-slate-900/0"
+          : "bg-gray-900/0"
       }`}
     >
       <h1 className={`text-xl font-bold z-20 ${toggle && "text-gray-100"}`}>
@@ -73,25 +74,11 @@ export default function Header() {
       </nav>
       <div className="flex gap-4 max-lg:hidden">
         <Link
-          href={"https://wa.me/6281362807810"}
+          href="/keranjang"
           target="_blank"
-          className="hover:text-sky-600"
+          className="hover:text-sky-600 flex items-center gap-2"
         >
-          <AiOutlineWhatsApp size={22} />
-        </Link>
-        <Link
-          href={"https://www.instagram.com/jal_snorkeling_sabang/"}
-          target="_blank"
-          className="hover:text-sky-600"
-        >
-          <AiOutlineInstagram size={22} />
-        </Link>
-        <Link
-          href={"https://www.tiktok.com/@bahrizal13"}
-          target="_blank"
-          className="hover:text-sky-600"
-        >
-          <AiOutlineTikTok size={22} />
+          <AiOutlineShoppingCart size={22} /> Keranjang
         </Link>
       </div>
       <button

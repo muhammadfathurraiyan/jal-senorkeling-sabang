@@ -43,7 +43,7 @@ export default function Tawaran() {
                 </p>
               </div>
               <Link
-                href={""}
+                href={"/penawaran/senorkeling"}
                 className="px-3 py-1 rounded-md border border-gray-900 w-fit font-medium hover:text-gray-100 hover:bg-gray-900 duration-300"
               >
                 Detail
@@ -72,7 +72,7 @@ export default function Tawaran() {
                 </p>
               </div>
               <Link
-                href={""}
+                href={"/penawaran/dolphin-trip"}
                 className="px-3 py-1 rounded-md border border-gray-900 w-fit font-medium hover:text-gray-100 hover:bg-gray-900 duration-300"
               >
                 Detail
@@ -128,7 +128,7 @@ export default function Tawaran() {
                 </p>
               </div>
               <Link
-                href={""}
+                href={"/penawaran/peralatan-snorkeling"}
                 className="px-3 py-1 rounded-md border border-gray-900 w-fit font-medium hover:text-gray-100 hover:bg-gray-900 duration-300"
               >
                 Detail
@@ -156,7 +156,7 @@ export default function Tawaran() {
                 </p>
               </div>
               <Link
-                href={""}
+                href={"/penawaran/penginapan"}
                 className="px-3 py-1 rounded-md border border-gray-900 w-fit font-medium hover:text-gray-100 hover:bg-gray-900 duration-300"
               >
                 Detail
@@ -213,7 +213,7 @@ export default function Tawaran() {
                 </p>
               </div>
               <Link
-                href={""}
+                href={"/penawaran/rental"}
                 className="px-3 py-1 rounded-md border border-gray-900 w-fit font-medium hover:text-gray-100 hover:bg-gray-900 duration-300"
               >
                 Detail

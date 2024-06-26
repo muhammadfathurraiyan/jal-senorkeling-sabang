@@ -4,7 +4,9 @@ export default function page() {
   return (
     <main className="min-h-screen mb-[72px] px-20 max-lg:px-6">
       <article className="lg:w-2/3">
-        <h1 className="text-8xl max-lg:text-6xl font-bold">Jal Senorkeling Sabang</h1>
+        <h1 className="text-8xl max-lg:text-6xl font-bold">
+          Jal Senorkeling Sabang
+        </h1>
         <p className="text-lg">
           Jal Senorkeling Sabang adalah pilihan unggulan bagi wisatawan yang
           berkunjung ke Sabang. Kami menawarkan berbagai paket spesial termasuk
