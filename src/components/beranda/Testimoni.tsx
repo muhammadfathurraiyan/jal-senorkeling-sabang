@@ -58,7 +58,7 @@ export default function Testimoni() {
                   key={index}
                   className="flex-grow-0 flex-shrink-0 basis-full min-w-0 flex items-center justify-center flex-col p-8 gap-4"
                 >
-                  <h1 className="text-3xl font-bold text-center" text-center>
+                  <h1 className="text-3xl font-bold text-center">
                     "{data.title}"
                   </h1>
                   <p className="text-center">{data.description}</p>
@@ -72,15 +72,17 @@ export default function Testimoni() {
           </div>
           <div className="flex items-center justify-between absolute top-0 bottom-0 inset-x-20 max-lg:inset-x-4">
             <button
-              className="rounded-full p-1 border bg-gray-100 border-gray-900 hover:bg-gray-900 hover:text-gray-100 duration-300"
+              className="rounded-full p-1 border bg-gray-100 border-gray-900 hover:bg-gray-900 hover:text-gray-100 duration-200"
               type="button"
+              aria-label="tombol selanjutnya"
               onClick={scrollPrev}
             >
               <AiOutlineLeft size={14} />
             </button>
             <button
-              className="rounded-full p-1 border bg-gray-100 border-gray-900 hover:bg-gray-900 hover:text-gray-100 duration-300"
+              className="rounded-full p-1 border bg-gray-100 border-gray-900 hover:bg-gray-900 hover:text-gray-100 duration-200"
               type="button"
+              aria-label="tombol sebelumnya"
               onClick={scrollNext}
             >
               <AiOutlineRight size={14} />

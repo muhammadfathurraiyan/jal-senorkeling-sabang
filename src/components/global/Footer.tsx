@@ -20,21 +20,24 @@ export default function Footer() {
           <Link
             href={"https://wa.me/6281362807810"}
             target="_blank"
-            className="hover:text-sky-600 duration-300"
+            className="hover:text-sky-600 duration-200"
+            aria-label="whatsapp"
           >
             <AiOutlineWhatsApp size={24} />
           </Link>
           <Link
             href={"https://www.instagram.com/jal_snorkeling_sabang/"}
             target="_blank"
-            className="hover:text-sky-600 duration-300"
+            className="hover:text-sky-600 duration-200"
+            aria-label="instagram"
           >
             <AiOutlineInstagram size={24} />
           </Link>
           <Link
             href={"https://www.tiktok.com/@bahrizal13"}
             target="_blank"
-            className="hover:text-sky-600 duration-300"
+            className="hover:text-sky-600 duration-200"
+            aria-label="titktok"
           >
             <AiOutlineTikTok size={24} />
           </Link>
@@ -44,25 +47,25 @@ export default function Footer() {
       <nav className="text-sm">
         <ul className="flex items-center gap-4">
           <li>
-            <Link className="hover:text-sky-600 duration-300" href="/">
+            <Link className="hover:text-sky-600 duration-200" href="/">
               Beranda
             </Link>
           </li>
-          |
+          <li>|</li>
           <li>
-            <Link className="hover:text-sky-600 duration-300" href="/destinasi">
-              Destinasi
+            <Link className="hover:text-sky-600 duration-200" href="/destinasi">
+              Penawaran
             </Link>
           </li>
-          |
+          <li>|</li>
           <li>
-            <Link className="hover:text-sky-600 duration-300" href="/tentang">
+            <Link className="hover:text-sky-600 duration-200" href="/tentang">
               Tentang
             </Link>
           </li>
-          |
+          <li>|</li>
           <li>
-            <Link className="hover:text-sky-600 duration-300" href="/kontak">
+            <Link className="hover:text-sky-600 duration-200" href="/kontak">
               Kontak
             </Link>
           </li>
@@ -73,7 +76,7 @@ export default function Footer() {
         <Link
           href={"https://muhammadfathurraiyan.site"}
           target="_blank"
-          className="font-bold hover:text-sky-600 duration-300"
+          className="font-bold hover:text-sky-600 duration-200"
         >
           Raiyan.
         </Link>

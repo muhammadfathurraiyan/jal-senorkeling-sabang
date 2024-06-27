@@ -1,4 +1,10 @@
-import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mengenal Kami dan Layanan Kami",
+  description:
+    "Pelajari lebih lanjut tentang kami dan layanan yang kami tawarkan di Wisata Sabang. Dari trip snorkeling ke Pulau Rubiah hingga dolphin trip, penginapan, dan rental kendaraan, kami berkomitmen untuk memberikan pengalaman wisata terbaik di Sabang.",
+};
 
 export default function page() {
   return (

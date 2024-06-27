@@ -7,9 +7,9 @@ import { useCallback } from "react";
 import { MdArrowRightAlt, MdOutlineLocationOn } from "react-icons/md";
 
 const slides = [
-  { title: "Pantai Iboih", img: "/bg1.jpg" },
-  { title: "Dolphin Trip", img: "/bg3.jpg" },
-  { title: "Pulau Rubiah", img: "/bg8.jpg" },
+  { title: "Pantai Iboih", img: "/iboih.jpg" },
+  { title: "Dolphin Trip", img: "/dolphin.jpg" },
+  { title: "Pulau Rubiah", img: "/senorkeling.jpg" },
 ];
 
 export default function Slider() {
@@ -53,13 +53,15 @@ export default function Slider() {
         </div>
         <div className="absolute flex flex-col justify-center gap-4 inset-y-0 right-5">
           <button
-            className="p-4 rounded-full duration-300 bg-gray-100/30 hover:bg-gray-100/50 text-gray-100"
+            className="p-4 rounded-full duration-200 bg-gray-100/30 hover:bg-gray-100/50 text-gray-100"
+            aria-label="tombol selanjutnya"
             onClick={scrollNext}
           >
             <MdArrowRightAlt size={48} />
           </button>
           <button
-            className="p-4 rounded-full duration-300 bg-gray-100/30 hover:bg-gray-100/50 rotate-180 text-gray-100"
+            className="p-4 rounded-full duration-200 bg-gray-100/30 hover:bg-gray-100/50 rotate-180 text-gray-100"
+            aria-label="tombol sebelumnya"
             onClick={scrollPrev}
           >
             <MdArrowRightAlt size={48} />
