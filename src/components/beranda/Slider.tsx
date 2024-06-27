@@ -14,9 +14,10 @@ const slides = [
 ];
 
 export default function Slider() {
-  const options: EmblaOptionsType = { loop: true, containScroll: false };
-  // const plugins: EmblaPluginType[] = [Autoplay()];
-  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    containScroll: false,
+  });
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
