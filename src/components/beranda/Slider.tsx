@@ -12,11 +12,14 @@ const slides = [
   { title: "Pulau Rubiah", img: "/senorkeling.jpg" },
 ];
 
+useEmblaCarousel.globalOptions = { loop: true };
+Autoplay.globalOptions = { delay: 4000 };
+
 export default function Slider() {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    { containScroll: false, loop: true },
-    [Fade(), Autoplay()]
-  );
+  const [emblaRef, emblaApi] = useEmblaCarousel({ containScroll: false }, [
+    Fade(),
+    Autoplay(),
+  ]);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
