@@ -13,7 +13,7 @@ export default function Tawaran() {
     <section className="mb-[72px] mt-4 space-y-6 px-20 max-lg:px-6">
       <div className="grid lg:grid-cols-3 gap-6">
         {data1.map((data) => (
-          <div className="rounded-xl border border-gray-400 hover:border-gray-900 duration-300">
+          <div key={data.id} className="rounded-xl border border-gray-400 hover:border-gray-900 duration-300">
             <Image
               src={data.image}
               alt={"gambar " + data.title}
@@ -48,7 +48,7 @@ export default function Tawaran() {
       </div>
       <div className="grid lg:grid-cols-2 gap-6">
         {data2.map((data) => (
-          <div className="rounded-xl border border-gray-400 hover:border-gray-900 duration-300">
+          <div key={data.id} className="rounded-xl border border-gray-400 hover:border-gray-900 duration-300">
             <Image
               src={data.image}
               alt={"gambar " + data.title}

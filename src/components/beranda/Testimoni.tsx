@@ -59,7 +59,7 @@ export default function Testimoni() {
                   className="flex-grow-0 flex-shrink-0 basis-full min-w-0 flex items-center justify-center flex-col p-8 gap-4"
                 >
                   <h1 className="text-3xl font-bold text-center">
-                    "{data.title}"
+                    &quot;{data.title}&quot;
                   </h1>
                   <p className="text-center">{data.description}</p>
                   <div className="-space-y-1 ">
