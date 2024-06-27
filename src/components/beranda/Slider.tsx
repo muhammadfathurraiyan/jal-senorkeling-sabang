@@ -4,7 +4,7 @@ import Fade from "embla-carousel-fade";
 import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType, EmblaPluginType } from "embla-carousel";
 import Image from "next/image";
-import { useCallback } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { MdArrowRightAlt, MdOutlineLocationOn } from "react-icons/md";
 
 const slides = [
@@ -14,6 +14,7 @@ const slides = [
 ];
 
 export default function Slider() {
+  const [isClient, setIsClient] = useState(false);
   const options: EmblaOptionsType = { loop: true, containScroll: false };
   const plugins: EmblaPluginType[] = [Autoplay(), Fade()];
   const [emblaRef, emblaApi] = useEmblaCarousel(options, plugins);
@@ -26,10 +27,13 @@ export default function Slider() {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   return (
     <section className="w-full px-20 max-lg:px-6">
       <div className="w-full relative">
-        <div className="overflow-hidden" ref={emblaRef}>
+        <div className="overflow-hidden" ref={isClient ? emblaRef : null}>
           <div className="grid grid-flow-col auto-cols-[100%]">
             {slides.map((item, index) => (
               <div
