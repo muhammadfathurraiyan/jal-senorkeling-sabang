@@ -2,6 +2,7 @@
 import Autoplay from "embla-carousel-autoplay";
 import Fade from "embla-carousel-fade";
 import useEmblaCarousel from "embla-carousel-react";
+import { EmblaOptionsType, EmblaPluginType } from "embla-carousel";
 import Image from "next/image";
 import { useCallback } from "react";
 import { MdArrowRightAlt, MdOutlineLocationOn } from "react-icons/md";
@@ -13,10 +14,9 @@ const slides = [
 ];
 
 export default function Slider() {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    { containScroll: false, loop: true },
-    [Autoplay(), Fade()]
-  );
+  const options: EmblaOptionsType = { loop: true, containScroll: false };
+  const plugins: EmblaPluginType[] = [Autoplay(), Fade()];
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, plugins);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
