@@ -17,7 +17,7 @@ export default function Slider() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     containScroll: false,
-  });
+  },[Autoplay({ delay: 4000 })]);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
