@@ -10,7 +10,6 @@ const slides = [
   { title: "Pantai Iboih", img: "/iboih.jpg" },
   { title: "Dolphin Trip", img: "/dolphin.jpg" },
   { title: "Pulau Rubiah", img: "/snorkeling.jpg" },
-  // { title: "Jal Snorkeling Sabang", img: "/jalsnorkelingsabang.jpg" },
 ];
 
 export default function Slider() {
