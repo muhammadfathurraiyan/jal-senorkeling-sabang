@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     default: "Jal Snorkeling Sabang",
   },
   openGraph: {
-    images: "/jalsnorkelingsabang.png",
+    images: "/jalsnorkelingsabang.jpg",
   },
 };
 
