@@ -51,7 +51,7 @@ export default function Header() {
           toggle && "text-gray-100"
         }`}
       >
-        Jal Senorkeling Sabang
+        Jal Snorkeling Sabang
       </Link>
       <nav className="max-lg:hidden">
         <ul className="flex items-center gap-8">
@@ -188,7 +188,7 @@ export default function Header() {
             </Link>
           </div>
           <p className="text-sm">
-            &copy; Jal Senorkeling Sabang. <br /> Site design with 💙 by:{" "}
+            &copy; Jal Snorkeling Sabang. <br /> Site design with 💙 by:{" "}
             <Link
               onClick={() => setToggle(false)}
               href={"https://muhammadfathurraiyan.site"}

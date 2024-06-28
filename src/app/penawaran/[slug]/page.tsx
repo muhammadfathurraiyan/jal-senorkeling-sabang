@@ -27,15 +27,15 @@ export async function generateMetadata(
   return {
     title: data.title,
     openGraph: {
-      images: [data.image],
+      images: data.image,
     },
   };
 }
 
 const parameter = [
-  "senorkeling",
+  "snorkeling",
   "dolphin-trip",
-  "peralatan-senorkeling",
+  "peralatan-snorkeling",
   "penginapan",
   "rental",
 ];
@@ -80,7 +80,7 @@ export default function page({ params }: Props) {
           </div>
           <Link
             href={link(
-              `https://jalsenorkelingsabang.vercel.app/penawaran/${data.slug}`,
+              `https://jalsnorkelingsabang.vercel.app/penawaran/${data.slug}`,
               data.title
             )}
             target="_blank"

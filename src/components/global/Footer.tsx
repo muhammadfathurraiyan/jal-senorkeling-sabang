@@ -43,7 +43,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <h1 className="text-xl font-bold">Jal Senorkeling Sabang</h1>
+      <h1 className="text-xl font-bold">Jal Snorkeling Sabang</h1>
       <nav className="text-sm">
         <ul className="flex items-center gap-4">
           <li>
@@ -72,7 +72,7 @@ export default function Footer() {
         </ul>
       </nav>
       <p className="text-sm text-center">
-        &copy; Jal Senorkeling Sabang. <br /> Site design with 💙 by:{" "}
+        &copy; Jal Snorkeling Sabang. <br /> Site design with 💙 by:{" "}
         <Link
           href={"https://muhammadfathurraiyan.site"}
           target="_blank"

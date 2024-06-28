@@ -11,10 +11,10 @@ export default function page() {
     <main className="min-h-screen mb-[72px] px-20 max-lg:px-6">
       <article className="lg:w-2/3">
         <h1 className="text-8xl max-lg:text-6xl font-bold">
-          Jal Senorkeling Sabang
+          Jal Snorkeling Sabang
         </h1>
         <p className="text-lg">
-          Jal Senorkeling Sabang adalah pilihan unggulan bagi wisatawan yang
+          Jal Snorkeling Sabang adalah pilihan unggulan bagi wisatawan yang
           berkunjung ke Sabang. Kami menawarkan berbagai paket spesial termasuk
           penginapan, penyewaan transportasi, perjalanan melihat lumba-lumba,
           serta penyewaan peralatan snorkeling. Kami berkomitmen untuk
@@ -22,7 +22,7 @@ export default function page() {
           di Sabang menjadi tak terlupakan.
         </p>
         <h2 className="mt-4 text-3xl font-bold">
-          Penawaran dari Jal Senorkeling Sabang
+          Penawaran dari Jal Snorkeling Sabang
         </h2>
         <ol className="ml-2 space-y-1">
           <li className="list-inside list-decimal">

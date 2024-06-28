@@ -7,9 +7,13 @@ import Footer from "@/components/global/Footer";
 const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://jalsenorkelingsabang.vercel.app"),
   title: {
-    template: "%s | Jal Senorkeling Sabang",
-    default: "Jal Senorkeling Sabang",
+    template: "%s | Jal Snorkeling Sabang",
+    default: "Jal Snorkeling Sabang",
+  },
+  openGraph: {
+    images: "/dolphin.jpg",
   },
 };
 

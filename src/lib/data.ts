@@ -1,11 +1,11 @@
 export const dataTawaran = [
   {
     id: 1,
-    title: "Trip Senorkeling Pulau Rubiah",
+    title: "Trip Snorkeling Pulau Rubiah",
     description:
-      "Nikmati hari senorkeling dan bersenang-senang di Pulau Rubiah. Wisatawan bisa bersenorkeling dan berenang di antara gerombolan ikan di perairan biru jernih dan dangkal .Saat ini, pulau ini menjadi tujuan liburan utama bagi wisatawan yang berada di Sabang. Perjalanan singkat dengan speed boat dari Pantai Iboih di Sabang akan membawa wisatawan langsung ke Pulau Rubiah. Segera hubungi kami dengan mengklik tombol dibawah untuk informasi lebih lanjut.",
-    image: "/senorkeling.jpg",
-    slug: "senorkeling",
+      "Nikmati hari snorkeling dan bersenang-senang di Pulau Rubiah. Wisatawan bisa bersnorkeling dan berenang di antara gerombolan ikan di perairan biru jernih dan dangkal .Saat ini, pulau ini menjadi tujuan liburan utama bagi wisatawan yang berada di Sabang. Perjalanan singkat dengan speed boat dari Pantai Iboih di Sabang akan membawa wisatawan langsung ke Pulau Rubiah. Segera hubungi kami dengan mengklik tombol dibawah untuk informasi lebih lanjut.",
+    image: "/snorkeling.jpg",
+    slug: "snorkeling",
   },
   {
     id: 2,
@@ -17,11 +17,11 @@ export const dataTawaran = [
   },
   {
     id: 3,
-    title: "Peralatan Senorkeling ",
+    title: "Peralatan Snorkeling ",
     description:
       "Nikmati keindahan terumbu karang dan kehidupan laut dengan menyewa peralatan snorkeling berkualitas dari kami. Dengan harga terjangkau, wisatawan bisa merasakan pengalaman snorkeling yang tak terlupakan! Kami menyediakan pelampung, kacamata, dan fin, serta berbagai paket lainya yang bisa disesuaikan dengan kebutuhan wisatawan. Dengan lokasi kami yang strategis, Anda bisa segera menuju spot snorkeling pulau Rubiah tanpa perlu repot. Segera hubungi kami dengan mengklik tombol dibawah untuk informasi lebih lanjut.",
-    image: "/peralatan-senorkeling.jpg",
-    slug: "peralatan-senorkeling",
+    image: "/peralatan-snorkeling.jpg",
+    slug: "peralatan-snorkeling",
   },
   {
     id: 4,

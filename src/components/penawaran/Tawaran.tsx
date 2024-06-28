@@ -27,7 +27,7 @@ export default function Tawaran() {
               <div className="space-x-2">
                 <Link
                   href={link(
-                    `https://jalsenorkelingsabang.vercel.app/penawaran/${data.slug}`,
+                    `https://jalsnorkelingsabang.com/penawaran/${data.slug}`,
                     data.title
                   )}
                   target="_blank"
@@ -62,7 +62,7 @@ export default function Tawaran() {
               <div className="space-x-2">
                 <Link
                   href={link(
-                    `https://jalsenorkelingsabang.vercel.app/penawaran/${data.slug}`,
+                    `https://jalsnorkelingsabang.com/penawaran/${data.slug}`,
                     data.title
                   )}
                   target="_blank"

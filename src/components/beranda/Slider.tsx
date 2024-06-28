@@ -9,7 +9,7 @@ import { MdArrowRightAlt, MdOutlineLocationOn } from "react-icons/md";
 const slides = [
   { title: "Pantai Iboih", img: "/iboih.jpg" },
   { title: "Dolphin Trip", img: "/dolphin.jpg" },
-  { title: "Pulau Rubiah", img: "/senorkeling.jpg" },
+  { title: "Pulau Rubiah", img: "/snorkeling.jpg" },
 ];
 
 export default function Slider() {

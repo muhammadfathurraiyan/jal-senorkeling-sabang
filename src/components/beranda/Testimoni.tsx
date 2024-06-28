@@ -8,14 +8,14 @@ const testimoni = [
   {
     title: "Pengalaman yang menakjubkan",
     description:
-      "Pengalaman snorkeling dengan Jal Senorkeling Sabang sungguh luar biasa! Panduan yang ramah dan profesional membuat perjalanan kami sangat menyenangkan. Keindahan bawah laut Sabang benar-benar memukau, dan kami merasa sangat aman selama menyelam. Terima kasih Jal Senorkeling Sabang atas liburan yang tak terlupakan!",
+      "Pengalaman snorkeling dengan Jal Snorkeling Sabang sungguh luar biasa! Panduan yang ramah dan profesional membuat perjalanan kami sangat menyenangkan. Keindahan bawah laut Sabang benar-benar memukau, dan kami merasa sangat aman selama menyelam. Terima kasih Jal Snorkeling Sabang atas liburan yang tak terlupakan!",
     by: "Muhammad Fathur Raiyan",
     from: "Banda Aceh",
   },
   {
     title: "Luar biasa",
     description:
-      "Luar biasa! Jal Senorkeling Sabang memberikan layanan terbaik. Alat snorkeling berkualitas, tim yang berpengalaman, dan spot-spot snorkeling yang menakjubkan. Saya sangat merekomendasikan jasa wisata ini untuk siapa saja yang ingin menikmati keindahan laut Sabang.",
+      "Luar biasa! Jal Snorkeling Sabang memberikan layanan terbaik. Alat snorkeling berkualitas, tim yang berpengalaman, dan spot-spot snorkeling yang menakjubkan. Saya sangat merekomendasikan jasa wisata ini untuk siapa saja yang ingin menikmati keindahan laut Sabang.",
     by: "Muhammad Afghan",
     from: "Banda Aceh",
   },
@@ -39,15 +39,15 @@ export default function Testimoni() {
         <div className="px-20 max-lg:px-6 space-y-4">
           <BiSolidQuoteAltRight size={52} />
           <p>
-            Jal Senorkeling Sabang adalah pilihan terbaik untuk wisatawan di
+            Jal Snorkeling Sabang adalah pilihan terbaik untuk wisatawan di
             sabang kami memberikan beberapa penawaran spesial seperti
             penginapan, rental transportasi, dolphin trip, rental peralatan
-            senorkeling dan lainya! Kemi pastinya akan memberikan pelayanan yang
+            snorkeling dan lainya! Kemi pastinya akan memberikan pelayanan yang
             terbaik untuk pengalaman liburan anda di Sabang.
           </p>
           <div className="-space-y-1">
             <p className="font-bold">Bahrizal</p>
-            <p>Jal Senorkeling Sabang</p>
+            <p>Jal Snorkeling Sabang</p>
           </div>
         </div>
         <div className="px-20 max-lg:px-4 max-lg:mx-6 relative bg-gray-100 text-gray-900 rounded-l-xl max-lg:rounded-r-xl">
