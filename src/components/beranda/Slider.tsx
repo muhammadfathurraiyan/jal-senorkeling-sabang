@@ -1,5 +1,5 @@
 "use client";
-// import Fade from "embla-carousel-fade";
+import Fade from "embla-carousel-fade";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
@@ -13,7 +13,10 @@ const slides = [
 ];
 
 export default function Slider() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    { loop: true, containScroll: false },
+    [Autoplay(), Fade()]
+  );
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
