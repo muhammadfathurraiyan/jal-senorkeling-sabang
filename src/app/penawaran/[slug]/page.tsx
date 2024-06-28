@@ -19,7 +19,6 @@ export async function generateMetadata(
   // fetch data
   const data = dataTawaran.find((data) => data.slug === slug);
 
-  // optionally access and extend (rather than replace) parent metadata
   if (!data) {
     return { title: "Penawaran" };
   }
