@@ -73,7 +73,7 @@ export default function page({ params }: Props) {
           </div>
           <Link
             href={link(
-              `https://jalsnorkelingsabang.vercel.app/penawaran/${data.slug}`,
+              `https://jalsnorkelingsabang.com/penawaran/${data.slug}`,
               data.title
             )}
             target="_blank"
