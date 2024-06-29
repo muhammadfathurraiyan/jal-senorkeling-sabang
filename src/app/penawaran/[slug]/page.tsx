@@ -1,19 +1,18 @@
+import Embed from "@/components/penawaran/slug/Embed";
+import Slider from "@/components/penawaran/slug/Slider";
 import { dataTawaran } from "@/lib/data";
+import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { MdArrowRightAlt } from "react-icons/md";
-import { Metadata, ResolvingMetadata } from "next";
 
 type Props = {
   params: { slug: string };
 };
 
-export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.slug;
 
   // fetch data
@@ -56,16 +55,11 @@ export default function page({ params }: Props) {
       >
         <MdArrowRightAlt className="rotate-180" size={28} /> Kembali
       </Link>
-      <div className="grid lg:grid-cols-2 gap-8 mt-4">
-        <section className="rounded-3xl max-lg:h-[40vh] overflow-hidden">
-          <Image
-            src={data.image}
-            alt={"gambar " + data.title}
-            width={1920}
-            height={1080}
-            className="size-full object-cover rounded-xl"
-          />
-        </section>
+      <div className="grid lg:grid-cols-2 gap-8 max-lg:gap-4 mt-4">
+        <Slider
+          embedData={data.embedData}
+          img={{ alt: data.title, src: data.image }}
+        />
         <section className="flex flex-col gap-4 lg:justify-between">
           <div>
             <h1 className="font-bold  text-3xl tracking-wide leading-0">
