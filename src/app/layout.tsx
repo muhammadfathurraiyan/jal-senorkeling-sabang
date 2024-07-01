@@ -8,7 +8,14 @@ import Footer from "@/components/global/Footer";
 const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jalsenorkelingsabang.vercel.app"),
+  metadataBase: new URL("https://jalsnorkelingsabang.com"),
+  title: {
+    template: "%s | Jal Snorkeling Sabang",
+    default: "Jal Snorkeling Sabang",
+  },
+  openGraph: {
+    images: "/jalsnorkelingsabang.jpg",
+  },
   keywords: [
     "wisata Sabang",
     "snorkeling Pulau Rubiah",
@@ -45,13 +52,6 @@ export const metadata: Metadata = {
     "atraksi Pulau Weh",
     "perjalanan laut Sabang",
   ],
-  title: {
-    template: "%s | Jal Snorkeling Sabang",
-    default: "Jal Snorkeling Sabang",
-  },
-  openGraph: {
-    images: "/jalsnorkelingsabang.jpg",
-  },
 };
 
 export default function RootLayout({

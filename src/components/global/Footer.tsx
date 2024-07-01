@@ -53,7 +53,7 @@ export default function Footer() {
           </li>
           <li>|</li>
           <li>
-            <Link className="hover:text-sky-600 duration-200" href="/destinasi">
+            <Link className="hover:text-sky-600 duration-200" href="/penawaran">
               Penawaran
             </Link>
           </li>

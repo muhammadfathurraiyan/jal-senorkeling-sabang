@@ -5,7 +5,6 @@ import Testimoni from "@/components/beranda/Testimoni";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Eksplorasi Keindahan Pulau Sabang",
   description:
     "Jelajahi keindahan Sabang dengan berbagai penawaran menarik seperti trip snorkeling ke Pulau Rubiah, dolphin trip, penyewaan peralatan snorkeling, penginapan, dan rental kendaraan. Temukan pengalaman liburan tak terlupakan di Sabang bersama kami.",
 };
