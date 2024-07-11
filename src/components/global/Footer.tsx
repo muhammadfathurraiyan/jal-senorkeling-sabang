@@ -74,7 +74,7 @@ export default function Footer() {
       <p className="text-sm text-center">
         &copy; Jal Snorkeling Sabang. <br /> Site design with 💙 by:{" "}
         <Link
-          href={"https://muhammadfathurraiyan.site"}
+          href={"https://muhammadfathurraiyan.vercel.app"}
           target="_blank"
           className="font-bold hover:text-sky-600 duration-200"
         >
