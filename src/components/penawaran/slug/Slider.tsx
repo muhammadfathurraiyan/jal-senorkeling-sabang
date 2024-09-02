@@ -4,7 +4,6 @@ import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import { useCallback } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import { InstagramEmbed, TikTokEmbed } from "react-social-media-embed";
 import Embed from "./Embed";
 
 type Props = {
@@ -41,7 +40,7 @@ export default function Slider({ embedData, img }: Props) {
               key={item.id}
               className="flex-grow-0 flex-shrink-0 basis-full min-w-0 h-[70vh] max-lg:h-[50vh]"
             >
-              <Embed url={item.url} />
+              <Embed provider={item.provider} url={item.url} />
             </div>
           ))}
         </div>

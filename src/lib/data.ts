@@ -94,6 +94,21 @@ export const dataTawaran = [
     embedData: [
       {
         id: 1,
+        provider: "system",
+        url: "/honda.mp4",
+      },
+      {
+        id: 2,
+        provider: "system",
+        url: "/moto1.mp4",
+      },
+      {
+        id: 3,
+        provider: "system",
+        url: "/moto2.mp4",
+      },
+      {
+        id: 4,
         provider: "tiktok",
         url: "https://www.tiktok.com/player/v1/7301894484550323462?rel=0&loop=1&description=1",
       },
