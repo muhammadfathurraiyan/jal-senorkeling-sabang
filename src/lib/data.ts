@@ -69,16 +69,66 @@ export const dataTawaran = [
     title: "Penginapan ",
     description:
       "Temukan kenyamanan dan keindahan di penginapan kami yang startegis. Dengan fasilitas lengkap dan layanan prima, kami siap menyambut wisatawan dengan kamar yang bersih, nyaman, dan dilengkapi dengan Wi-Fi, AC, dan lainya. Kami juga menawarkan paket spesial untuk keluarga dan pasangan, serta diskon-diskon yang menarik. Segera reservasi dengan mengklik tombol dibawah untuk penawaran terbaik.",
-    image: "/penginapan.jpg",
+    image: "/penginapan4.jpg",
     slug: "penginapan",
     embedData: [
       {
-        id: 1,
+        id: 6,
+        provider: "system-image",
+        url: "/penginapan6.jpg",
+      },
+      {
+        id: 8,
+        provider: "system-image",
+        url: "/penginapan8.jpg",
+      },
+      {
+        id: 9,
+        provider: "system-image",
+        url: "/penginapan9.jpg",
+      },
+      {
+        id: 11,
+        provider: "system-image",
+        url: "/penginapan11.jpg",
+      },
+      {
+        id: 12,
+        provider: "system-image",
+        url: "/penginapan12.jpg",
+      },
+      {
+        id: 13,
+        provider: "system-image",
+        url: "/penginapan13.jpg",
+      },
+      {
+        id: 7,
+        provider: "system-image",
+        url: "/penginapan7.jpg",
+      },
+      {
+        id: 10,
+        provider: "system-image",
+        url: "/penginapan10.jpg",
+      },
+      {
+        id: 5,
+        provider: "system-image",
+        url: "/penginapan5.jpg",
+      },
+      {
+        id: 4,
+        provider: "system-image",
+        url: "/penginapan2.jpg",
+      },
+      {
+        id: 14,
         provider: "tiktok",
         url: "https://www.tiktok.com/player/v1/7367407989059226885?rel=0&loop=1&description=1",
       },
       {
-        id: 2,
+        id: 15,
         provider: "tiktok",
         url: "https://www.tiktok.com/player/v1/7358056858705235205?rel=0&loop=1&description=1",
       },
@@ -94,17 +144,17 @@ export const dataTawaran = [
     embedData: [
       {
         id: 1,
-        provider: "system",
+        provider: "system-video",
         url: "/honda.mp4",
       },
       {
         id: 2,
-        provider: "system",
+        provider: "system-video",
         url: "/moto1.mp4",
       },
       {
         id: 3,
-        provider: "system",
+        provider: "system-video",
         url: "/moto2.mp4",
       },
       {
