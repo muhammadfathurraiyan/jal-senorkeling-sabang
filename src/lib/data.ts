@@ -1,5 +1,57 @@
 export const dataTawaran = [
   {
+    id: 0,
+    title: "Paket Combo Snorkeling dan Dolphin Trip",
+    description:
+      "Nikmati pengalaman lengkap dengan paket combo snorkeling dan dolphin trip kami. Mulai hari Anda dengan snorkeling di perairan jernih Pulau Rubiah, dilanjutkan dengan melihat lumba-lumba yang bermain bebas di habitat alaminya. Wisatawan akan disuguhi pemandangan lumba-lumba yang riang bermain di sekitar boat, dan kemudian dapat menikmati keindahan bawah laut dengan berenang di antara gerombolan ikan berwarna-warni. Segera hubungi kami dengan mengklik tombol dibawah untuk informasi lebih lanjut.",
+    image: "/combo.png",
+    slug: "paket-combo",
+    detail: [
+      "Boat hunting dolphin trip",
+      "Pulang pergi Pulau Rubiah",
+      "Alat snorkeling full set",
+      "Pemandu snorkeling",
+      "Dokumentasi snorkeling",
+      "Safety",
+      "Pemandu dolphin trip",
+      "Dokumentasi dolphin trip",
+      "Asuransi snorkeling",
+      "Umpan ikan",
+    ],
+    embedData: [
+      {
+        id: 1,
+        provider: "system-video",
+        url: "/dolphin-1.mp4",
+      },
+      {
+        id: 2,
+        provider: "system-video",
+        url: "/dolphin-2.mp4",
+      },
+      {
+        id: 3,
+        provider: "system-video",
+        url: "/dolphin-3.mp4",
+      },
+      {
+        id: 1,
+        provider: "tiktok",
+        url: "https://www.tiktok.com/player/v1/7385458338999471365?rel=0&loop=1&description=1",
+      },
+      {
+        id: 2,
+        provider: "tiktok",
+        url: "https://www.tiktok.com/player/v1/7253512787677252870?rel=0&loop=1&description=1",
+      },
+      {
+        id: 3,
+        provider: "tiktok",
+        url: "https://www.tiktok.com/player/v1/7377775088415952133?rel=0&loop=1&description=1",
+      },
+    ],
+  },
+  {
     id: 1,
     title: "Trip Snorkeling Pulau Rubiah",
     description:
@@ -41,6 +93,21 @@ export const dataTawaran = [
         id: 2,
         provider: "tiktok",
         url: "https://www.tiktok.com/player/v1/7360665792565808389?rel=0&loop=1&description=1",
+      },
+      {
+        id: 3,
+        provider: "system-video",
+        url: "/dolphin-1.mp4",
+      },
+      {
+        id: 4,
+        provider: "system-video",
+        url: "/dolphin-2.mp4",
+      },
+      {
+        id: 5,
+        provider: "system-video",
+        url: "/dolphin-3.mp4",
       },
     ],
   },

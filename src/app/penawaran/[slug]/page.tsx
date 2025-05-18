@@ -1,8 +1,6 @@
-import Embed from "@/components/penawaran/slug/Embed";
 import Slider from "@/components/penawaran/slug/Slider";
 import { dataTawaran } from "@/lib/data";
-import { Metadata, ResolvingMetadata } from "next";
-import Image from "next/image";
+import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AiOutlineWhatsApp } from "react-icons/ai";
@@ -36,6 +34,7 @@ const parameter = [
   "peralatan-snorkeling",
   "penginapan",
   "rental",
+  "paket-combo",
 ];
 
 export default function page({ params }: Props) {
@@ -66,6 +65,13 @@ export default function page({ params }: Props) {
               {data.title}
             </h1>
             <p className="">{data.description}</p>
+            {data.detail && (
+              <ul className="mt-4 list-disc list-inside">
+                {data.detail.map((detail, index) => (
+                  <li className="" key={index}>{detail}</li>
+                ))}
+              </ul>
+            )}
             <blockquote className="p-2 pl-4 mt-4 bg-gray-300 border-l-4 border-gray-500">
               <strong>Info:</strong> <br />
               Silahkan klik pesan untuk melanjutkan ke WhatsApp!

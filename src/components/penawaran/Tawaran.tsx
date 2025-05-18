@@ -46,7 +46,7 @@ export default function Tawaran() {
           </div>
         ))}
       </div>
-      <div className="grid lg:grid-cols-2 gap-6">
+      <div className="grid lg:grid-cols-3 gap-6">
         {data2.map((data) => (
           <div key={data.id} className="rounded-xl border border-gray-400 hover:border-gray-900 duration-300">
             <Image
